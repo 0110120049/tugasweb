@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <title>Tugas Pertemuan 3 WEB</title>
+    <body style="background-color:red;">
+    <label for=""><h1>FORMULIR DAPODIK SISWA BARU </h1></label>
+    </body>
+    <form action="proses.php" method="POST">
+    <fieldset style="background-color:yellow;">
+        <Legend style="background-color: blue;">DATA PRIBADI</Legend>
+        <ol>
+            <li>
+                <label for="name">Nama Lengkap : </label>
+                <input type="text" name="Nama" value="" size="30" />
+            </li>
+        </ol>
+        <ol start="2">
+            <li>
+                <label>Jenis Kelamin : </label>
+                <div>
+                    <select name="jenis kelamin">
+                        <option value="">--Pilih---</option>
+                        <option value="Laki-laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <label for="NISN">NISN : </label>
+                <input type="number" min="10" name="NISN" value="" size="30" placeholder="0010496897" />                
+            </li>
+        </ol>
+        <ol start="4">
+            <li>
+                <label for="NIK">NIK : </label>
+                <input type="number" value="" size="30" placeholder="3602060178930001">
+            </li>
+        </ol>
+        <ol start="5">
+            <li>
+                <label for="NIK">No KK : </label>
+                <input type="number" value="" size="30" placeholder="3602060178930001">
+            </li>
+        </ol>
+        <ol start="6">
+            <li>
+                <label for="tempa_tlahir">Tempat Lahir : </label>
+                <input type="text" value="" size="30">
+            </li>
+        </ol>
+        <ol start="7">
+            <li>
+                <label for="Tanggal_Lahir">Tanggal Lahir : </label>
+                <input type="date" value="" size="30">
+            </li>
+        </ol>
+        <ol start="8">
+            <li>
+                <label for="no_registrasi_akta_lahir">No Registasi Akta Lahir : </label>
+                <input type="text" value="" size="30">
+            </li>
+        </ol>
+        <ol start="9">
+            <li>
+                <label>Agama & Kepercayaan : </label>
+                <div>
+                    <select name="jenis kelamin">
+                        <option value="">--Pilih---</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="Kepercayaan">Kepercayaan</option>
+                    </select>
+                </div>
+            </li>
+        </ol>
+        <ol start="10">
+            <li>
+                <label for="kewarganegaraan">Kewarganegaraan</label>
+                <div>
+                    <input type="radio" name="kewarganegaraan" value="wni" checked />Indonesia(WNI)
+                    <input type="radio" name="kewarganegaraan" value="wna" />Asing(WNA)
+                </div>
+            </li>
+        </ol>
+        <ol start="11">
+            <li>
+                <label for="alamat_jalan">Alamat Jalan</label>
+                <div>
+                    <textarea name="alamat_jalan" cols="50" rows="5"></textarea>
+                </div>                  
+            </li>
+        </ol>
+        <ol start="12">
+            <li>
+                <label for="RT">RT</label>
+                <input type="number" value="" size="30">
+            </li>
+        </ol>
+        <ol start="13">
+            <li>
+                <label for="RW">RW</label>
+                <input type="number" value="" size="30">
+            </li>
+        </ol>
+        <ol start="14">
+            <li>
+                <label for="nama_dusun">Nama Dusun</label>
+                <input type="text" size="30">
+            </li>
+        </ol>
+        <ol start="15">
+            <li>
+                <label for="nama_kelurahan">Nama Kelurahan</label>
+                <input type="text" size="30">
+            </li>
+        </ol>
+        <ol start="16">
+            <li>
+                <label for="kecamatan">Kecamatan</label>
+                <input type="text" size="30">
+            </li>
+        </ol>
+        <ol start="17">
+            <li>
+                <label for="kode_pos">Kode Pos</label>
+                <input type="number" size="30">
+            </li>
+        </ol>
+        <ol start="18">
+            <li>
+                <label for="tempat_tinggal">Tempat Tinggal</label>
+                <div>
+                    <select name="tempat_tinggal">
+                        <option value="">--Pilih--</option>
+                        <option value="Bersama Orang Tua">Bersama Orang Tua</option>
+                        <option value="Wali">Wali</option>
+                        <option value="Asrama">Asrama</option>
+                        <option value="Panti Asuhan">Panti Asuhan</option>
+                    </select>
+                </div>
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset style="background-color: blue;">
+        <legend style="background-color:yellow">Kontak</legend>
+        <ol start="1">
+            <li>
+                <label for="No Telepon Rumah">No Telepon Rumah</label>
+                <input type="number" size="40">
+            </li>
+        </ol>
+        <ol start="2">
+            <li>
+                <label for="No Hp">No Hp</label>
+                <input type="number" size="40">
+            </li>
+        </ol>
+        <ol start="3">
+            <li>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" size="50">
+            </li>
+        </ol>
+    </fieldset>
+    </form>
+    <form action="proses.php" method="POST">
+        <input type="submit">
+        <input type="reset">
+    </form>
+</head>
+</html> 
